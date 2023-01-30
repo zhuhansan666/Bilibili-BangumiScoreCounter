@@ -486,10 +486,10 @@ if __name__ == '__main__':
         print(f"{Fore.MAGENTA} 获取完毕! \n保存中...")
 
         with open('short_comments.json', 'w', encoding='utf-8') as fp:
-            json.dump(shrt_comments, fp)
+            json.dump(shrt_comments, fp, ensure_ascii=False)
 
         with open('long_comments.json', 'w', encoding='utf-8') as fp:
-            json.dump(long_comments, fp)
+            json.dump(long_comments, fp, ensure_ascii=False)
 
     else:
         print(f"{Fore.MAGENTA} 加载中...")
